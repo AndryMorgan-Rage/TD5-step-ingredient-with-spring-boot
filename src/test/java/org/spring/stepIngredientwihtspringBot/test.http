@@ -2,7 +2,7 @@
 GET localhost:8080/ingredients
 
 ### Get ingredient by ID
-GET localhost:8080/ingredients/1
+GET localhost:8080/ingredients/3
 
 ### Get stock value at specific time
 GET localhost:8080/ingredients/1/stock?at=2024-06-01T12:00:00Z&unit=KG
@@ -44,3 +44,14 @@ PUT localhost:8080/dishes/1/ingredients
 Content-Type: application/json
 
 []
+
+### Créer un nouveau plat
+POST http://localhost:8080/dishes
+Content-Type: application/json
+
+[{
+  "name": "Romazava",
+  "price": 15000.0,
+  "dishType": "MAIN"
+}
+]
