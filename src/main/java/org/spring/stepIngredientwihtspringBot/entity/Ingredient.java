@@ -1,7 +1,6 @@
 package org.spring.stepIngredientwihtspringBot.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
-import org.spring.stepIngredientwihtspringBot.entity.Enum.UnitType;
 
 import java.time.Instant;
 import java.util.List;
@@ -14,7 +13,7 @@ import java.util.List;
 public class Ingredient {
     private Integer id;
     private String name;
-    private org.spring.stepIngredientwihtspringBot.entity.CategoryEnum category;
+    private CategoryEnum category;
     private Double price;
     /* Ignore the stock movement for now */
     @JsonIgnore
@@ -28,7 +27,7 @@ public class Ingredient {
         double quantity = 0.0;
         for (StockMovement sm : concerned) {
             double quantitySm = sm.getValue().getQuantity();
-            if(sm.getType() == org.spring.stepIngredientwihtspringBot.entity.MovementTypeEnum.IN){
+            if(sm.getType() == MovementTypeEnum.IN){
                 quantity += quantitySm;
             } else {
                 quantity -= quantitySm;

@@ -4,7 +4,7 @@ import org.spring.stepIngredientwihtspringBot.datasource.Datasource;
 import org.spring.stepIngredientwihtspringBot.entity.*;
 import org.spring.stepIngredientwihtspringBot.entity.CategoryEnum;
 import org.spring.stepIngredientwihtspringBot.entity.DishTypeEnum;
-import org.spring.stepIngredientwihtspringBot.entity.Enum.UnitType;
+import org.spring.stepIngredientwihtspringBot.entity.UnitType;
 import org.spring.stepIngredientwihtspringBot.repository.DishRepository;
 import org.springframework.stereotype.Repository;
 

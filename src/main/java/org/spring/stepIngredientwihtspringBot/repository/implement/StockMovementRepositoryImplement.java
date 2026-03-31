@@ -1,7 +1,7 @@
 package org.spring.stepIngredientwihtspringBot.repository.implement;
 
 import org.spring.stepIngredientwihtspringBot.datasource.Datasource;
-import org.spring.stepIngredientwihtspringBot.entity.Enum.UnitType;
+import org.spring.stepIngredientwihtspringBot.entity.UnitType;
 import org.spring.stepIngredientwihtspringBot.entity.MovementTypeEnum;
 import org.spring.stepIngredientwihtspringBot.entity.StockMovement;
 import org.spring.stepIngredientwihtspringBot.entity.StockValue;

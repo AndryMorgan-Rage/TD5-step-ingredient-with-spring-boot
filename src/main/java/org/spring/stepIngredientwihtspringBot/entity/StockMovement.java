@@ -12,7 +12,7 @@ import java.time.Instant;
 public class StockMovement {
     private Integer id;
     private StockValue value;
-    private org.spring.stepIngredientwihtspringBot.entity.MovementTypeEnum type;
+    private MovementTypeEnum type;
     private Instant creationDatetime;
 
 

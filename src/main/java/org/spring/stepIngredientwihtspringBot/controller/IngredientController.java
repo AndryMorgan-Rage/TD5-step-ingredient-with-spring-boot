@@ -1,6 +1,6 @@
 package org.spring.stepIngredientwihtspringBot.controller;
 
-import org.spring.stepIngredientwihtspringBot.entity.Enum.UnitType;
+import org.spring.stepIngredientwihtspringBot.entity.UnitType;
 import org.spring.stepIngredientwihtspringBot.entity.Ingredient;
 import org.spring.stepIngredientwihtspringBot.service.IngredientService;
 import org.springframework.http.HttpStatus;

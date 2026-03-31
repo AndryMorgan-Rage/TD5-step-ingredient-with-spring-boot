@@ -1,6 +1,6 @@
 package org.spring.stepIngredientwihtspringBot.service;
 
-import org.spring.stepIngredientwihtspringBot.entity.Enum.UnitType;
+import org.spring.stepIngredientwihtspringBot.entity.UnitType;
 import org.spring.stepIngredientwihtspringBot.entity.Ingredient;
 import org.spring.stepIngredientwihtspringBot.entity.StockMovement;
 import org.spring.stepIngredientwihtspringBot.entity.StockValue;

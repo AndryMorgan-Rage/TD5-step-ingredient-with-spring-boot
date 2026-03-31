@@ -1,7 +1,6 @@
 package org.spring.stepIngredientwihtspringBot.entity;
 
 import lombok.*;
-import org.spring.stepIngredientwihtspringBot.entity.Enum.UnitType;
 
 @AllArgsConstructor
 @NoArgsConstructor
