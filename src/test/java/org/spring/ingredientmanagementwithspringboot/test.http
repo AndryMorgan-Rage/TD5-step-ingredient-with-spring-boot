@@ -1,0 +1,46 @@
+### Get all ingredients
+GET localhost:8080/ingredients
+
+### Get ingredient by ID
+GET localhost:8080/ingredients/1
+
+### Get stock value at specific time
+GET localhost:8080/ingredients/1/stock?at=2024-06-01T12:00:00Z&unit=KG
+
+### Get all dishes
+GET localhost:8080/dishes
+
+
+### Associate ingredients to dish (replace all existing ingredients)
+PUT localhost:8080/dishes/1/ingredients
+Content-Type: application/json
+
+[
+  {
+    "ingredient": {
+      "id": 1
+    },
+    "quantity_required": 2.5,
+    "unit": "KG"
+  },
+  {
+    "ingredient": {
+      "id": 3
+    },
+    "quantity_required": 1,
+    "unit": "PCS"
+  },
+  {
+    "ingredient": {
+      "id": 5
+    },
+    "quantity_required": 3,
+    "unit": "PCS"
+  }
+]
+
+### Dissociate all ingredients from dish (empty list)
+PUT localhost:8080/dishes/1/ingredients
+Content-Type: application/json
+
+[]
