@@ -34,6 +34,7 @@ public class DishController {
             List<Dish> createdDishes = dishService.createDishes(dishes);
             return ResponseEntity.status(HttpStatus.CREATED).body(createdDishes);
         } catch (ResponseStatusException e) {
+            // On renvoie explicitement le message d'erreur dans le corps de la réponse
             return ResponseEntity.status(e.getStatusCode()).body(e.getReason());
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
